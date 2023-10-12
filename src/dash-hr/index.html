@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashed Line - Empatheticbot Elements</title>
+	<script type="module" src="./dash-hr.js"></script>
+	<style>
+		body {
+			font-family: ui-rounded;
+			color: darkslategray;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Dashed Line Element</h1>
+	<h2>Default</h2>
+	<eb-dash-hr></eb-dash-hr>
+	<h2>Custom Dash Array</h2>
+	<eb-dash-hr dash="12, 7"></eb-dash-hr>
+	<h2>Custom Width</h2>
+	<eb-dash-hr width="4" dash="12, 7"></eb-dash-hr>
+	<h2>Custom Color</h2>
+	<eb-dash-hr color="orange" width="4" dash="12, 7"></eb-dash-hr>
+	<h2>With Prefix Slot</h2>
+	<eb-dash-hr color="lightblue" width="4" dash="12, 7">
+		<h3 slot="prefix">Some Label</h3>
+	</eb-dash-hr>
+	<h2>With Suffix Slot</h2>
+	<eb-dash-hr color="red" width="4" dash="12, 7">
+		<h3 slot="suffix">Some Label</h3>
+	</eb-dash-hr>
+	<h2>With Prefix & Suffix Slots</h2>
+	<eb-dash-hr color="blue" width="4" dash="12, 7">
+		<h3 slot="prefix">Some Label</h3>
+		<h3 slot="suffix">Some Other Label</h3>
+	</eb-dash-hr>
+</body>
+
+</html>
